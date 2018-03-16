@@ -1,0 +1,287 @@
+body {
+	background-color: white;
+	margin: 10px auto;
+	padding: 15vw;
+}
+
+div {
+	/*border: 1px solid black;*/
+}
+
+h2,h3 {
+	font-family: 'Nanum Gothic', sans-serif;
+	letter-spacing: 3px;
+}
+
+p{
+	font-family: 'Roboto';
+}
+
+/*NAVBAR*/
+.navigation {
+	list-style: none;
+	margin: 0 0 5em 0;
+ 	/*background: #606060;*/
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  /*padding: .5em;*/
+  color: slategrey;
+  font-family: 'Roboto';
+  padding: 2.5em 1.5em 1.5em 1.5em;
+/*  position: relative;
+  top: 20px;*/
+  /*background-color: #606060;*/
+}
+
+#header a {
+	font-weight: 800;
+	font-family: 'Roboto';
+	font-size: 5em;
+	padding: 0;
+}
+
+#navright {
+	margin-left: auto;
+}
+
+.container {
+	padding: 5em 0;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	align-items: stretch;
+	padding: 1em;
+}
+
+.profilePic {
+	margin-right: auto;
+	flex: 3;
+}
+
+.profilePic img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.about {
+	margin-left: auto;
+	padding: 0 3em 1em 1em;
+	flex: 1;
+}
+
+.about h2{
+	margin: 0 0 1em 0;
+}
+.container2 {
+	padding: 1em 0;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+
+.edu {
+	flex: 1;
+	padding: .5em 1em;
+}
+
+.edu h3 {
+	margin: .5em 0;
+}
+
+.exp {
+	flex: 1;
+	padding: .5em 1em;
+}
+
+.exp h3 {
+	margin: .5em 0;
+}
+
+.lang {
+	flex: 1;
+	padding: .5em 1em;
+}
+
+.lang h3 {
+	margin: .5em 0;
+}
+
+.lang ul {
+	padding: 0 0 0 20px;
+}
+
+
+
+/* PROJECT PAGE CSS*/
+.projectlist {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	/*background-color: silver;*/
+	/*padding: 1.5em;*/
+}
+
+.projects {
+	width: 350PX;
+	height: 350px;
+	display: flex;
+	min-width: 150px;
+	max-width: 500px;
+	min-height: 150px;
+	max-height: 500px;
+	margin: 2em auto;
+	/*box-sizing: border-box;*/
+	/*background-color: skyblue;*/
+	border: 1px solid black;
+	/*padding: 50px;*/
+	text-align: center;
+}
+
+.projects img {
+	max-height: 100%;
+	max-width: 100%;
+	object-fit: cover;
+}
+
+
+.bordered {
+   border: solid .5em transparent;
+   box-sizing: border-box;
+   /** relative so that our ::before absolute block can position itself according to it's parent block **/
+   position: relative;
+}
+
+.bordered::before {
+  content: '';
+  border: 1px solid transparent;
+  /** pseudo-elements are inline by default **/
+  display: block;
+  /** same height and width than our column **/
+  width: 100%;
+  height: 100%;
+  /** position absolute starting at the top and left of our column **/
+  position: absolute;
+  top: 0;
+  left: 0;
+  /** we want the pseudo-element to be behind our real column **/
+  z-index: -1;
+}
+
+/*MEDIA QUERIES*/
+@media all and (max-width: 800px) {
+	.navigation a {
+  padding: 1.5em .5em .5em .5em;
+}
+
+	#header a {
+  	font-size: 3em;
+  }
+
+  .container {
+  	flex-direction: column;
+  	padding: 3em 0;
+  }
+
+  .container2 {
+  	flex-direction: column;
+  }
+
+	.projectlist {
+  	flex-direction: column;
+  }
+
+
+  .about {
+		margin-left: 0;
+		padding: 0 3em 1em 1em;
+		flex: 1;
+
+  }
+  /*.navigation {
+    justify-content: space-between;
+  }
+
+
+	#navright {
+		margin-left:  0;
+	}
+*/
+
+  .projects {
+	width: 150PX;
+	height: 150px;
+	}
+
+	.projects img {
+	max-height: 100%;
+	max-width: 100%;
+	object-fit: cover;
+	}
+
+
+	.bordered {
+   border: solid .1em transparent;
+	}
+
+}
+
+@media all and (max-width: 600px) {
+  #header a {
+  	font-size: 3em;
+  }
+
+  .container {
+  	flex-direction: column;
+  	padding: 3em 0;
+  }
+
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .navigation a {
+    text-align: center;
+    padding: 5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+		#navright {
+			margin-left: 0;
+		}
+
+/*  .navigation li:last-of-type a {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: none;
+  }*/
+
+  .about {
+  	padding: .5em 1em;
+  	margin: 0;
+  }
+
+  .projects {
+	width: 150PX;
+	height: 150px;
+	}
+
+	.projects img {
+	max-height: 100%;
+	max-width: 100%;
+	object-fit: cover;
+	}
+
+
+	.bordered {
+   border: solid .1em transparent;
+	}
+
+
+}
