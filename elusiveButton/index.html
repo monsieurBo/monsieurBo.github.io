@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width">
+	<style type="text/css">
+		body {
+			margin: 0;
+		}
+
+		* {
+			box-sizing: border-box;
+			/*border: solid 1px;*/
+		}
+
+		.top {
+			background: #005353;
+			padding: 1.5em;
+			text-align: center;
+			color: white;
+		}
+
+		.field {
+			width: 100%;
+			height: 50vw;
+			text-align: center;
+		}
+
+		button {
+			cursor: pointer;
+		    border: none;
+		    background-color: white;
+		    padding: 0;
+		    text-align: center;
+		}
+
+		#btn {
+			position: relative;
+			/*left: 50vw;*/
+		}
+
+		#button:hover {
+			function
+		}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<h1>Catch Me..</h1>
+		<h2>if you can</h2>
+	</div>
+	
+	<div class="field">
+		<button id="btn" onclick="cooked()">
+			<img id="runner" onmouseover="morph()"  src="dragon.PNG" alt="HaHa">
+			<p>whooshhhh</p>
+		</button>
+	</div>
+
+	<!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+ -->
+	<script type="text/javascript">
+		var button = document.querySelector('#btn');
+		var run = document.querySelector('#runner');
+		var counter = 0;
+
+		// ninja steps and disguises every hover
+		function morph() {
+			var check = run.getAttribute('src');
+			
+			if (counter<10) {
+				// var scream = document.getElementsByTagName('p');
+				// console.log(scream.innerHTML);
+				if (check === 'dragon.PNG') {
+					run.src = 'pig.PNG';
+					// console.log(scream);
+					// if (scream === '') {
+					// scream.innerHTML = 'oh noes!!';
+					// }
+					counter++;
+	
+				}
+				else {
+					run.src = 'dragon.PNG';
+					// console.log(scream);
+					// if (scream === '') {
+					// scream.innerHTML = 'rawwrrRRRR!!';
+					// }
+					counter++;
+				}
+				offSet();
+			}
+
+
+			console.log(counter);
+		}
+
+
+		// gets cooked upon clicking
+		function cooked() {
+			run.src = 'steak.PNG';
+			button.style.left = '0vw';
+			run.removeAttribute('onmouseover');
+		}
+
+		// ninja footworks
+		function offSet() {
+			var newLeft = Math.floor(Math.random() * 300);
+			var newTop = Math.floor(Math.random() * 300);
+			button.style.left = String(newLeft) + 'px';
+			button.style.top = String(newTop) + 'px';
+		}
+
+	</script>
+</body>
+</html>
