@@ -52,7 +52,7 @@
 	
 	<div class="field">
 		<button id="btn" onclick="cooked()">
-			<img id="runner" onmouseover="morph()"  src="dragon.PNG" alt="HaHa">
+			<img id="runner" onmouseover="morph()"  src="dragon.png" alt="HaHa">
 			<p id="scream"></p>
 		</button>
 	</div>
@@ -71,8 +71,8 @@
 			if (counter<10) {
 				var yell = document.getElementById('scream');
 				console.log(scream.innerHTML);
-				if (check === 'dragon.PNG') {
-					run.src = 'pig.PNG';
+				if (check === 'dragon.png') {
+					run.src = 'pig.png';
 					console.log(yell);
 					// if (scream.innerHTML === '') {
 					yell.innerHTML = 'oh noes!!';
@@ -81,7 +81,7 @@
 	
 				}
 				else {
-					run.src = 'dragon.PNG';
+					run.src = 'dragon.png';
 					console.log(yell);
 					// if (scream.innerHTML === '') {
 					yell.innerHTML = 'rawwrrRRRR!!';
@@ -99,7 +99,7 @@
 		// gets cooked upon clicking
 		function cooked() {
 			var yell = document.getElementById('scream');
-			run.src = 'steak.PNG';
+			run.src = 'steak.png';
 			button.style.left = '0vw';
 			run.removeAttribute('onmouseover');
 			yell.innerHTML = '*sSizzzlesSs*';
