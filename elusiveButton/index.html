@@ -52,8 +52,8 @@
 	
 	<div class="field">
 		<button id="btn" onclick="cooked()">
-			<img id="runner" onmouseover="morph()"  src="dragon.png" alt="HaHa">
-			<p>whooshhhh</p>
+			<img id="runner" onmouseover="morph()"  src="dragon.PNG" alt="HaHa">
+			<p id="scream"></p>
 		</button>
 	</div>
 
@@ -69,22 +69,22 @@
 			var check = run.getAttribute('src');
 			
 			if (counter<10) {
-				// var scream = document.getElementsByTagName('p');
-				// console.log(scream.innerHTML);
-				if (check === 'dragon.png') {
-					run.src = 'pig.png';
-					// console.log(scream);
-					// if (scream === '') {
-					// scream.innerHTML = 'oh noes!!';
+				var yell = document.getElementById('scream');
+				console.log(scream.innerHTML);
+				if (check === 'dragon.PNG') {
+					run.src = 'pig.PNG';
+					console.log(yell);
+					// if (scream.innerHTML === '') {
+					yell.innerHTML = 'oh noes!!';
 					// }
 					counter++;
 	
 				}
 				else {
-					run.src = 'dragon.png';
-					// console.log(scream);
-					// if (scream === '') {
-					// scream.innerHTML = 'rawwrrRRRR!!';
+					run.src = 'dragon.PNG';
+					console.log(yell);
+					// if (scream.innerHTML === '') {
+					yell.innerHTML = 'rawwrrRRRR!!';
 					// }
 					counter++;
 				}
@@ -98,9 +98,11 @@
 
 		// gets cooked upon clicking
 		function cooked() {
-			run.src = 'steak.png';
+			var yell = document.getElementById('scream');
+			run.src = 'steak.PNG';
 			button.style.left = '0vw';
 			run.removeAttribute('onmouseover');
+			yell.innerHTML = '*sSizzzlesSs*';
 		}
 
 		// ninja footworks
