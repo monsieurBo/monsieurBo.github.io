@@ -1,0 +1,49 @@
+<!-- 
+
+BONUS IDEAS TO EXPLORE & CHALLENGE ON FREE TIME.
+
+CREATE AN AI PLAYER THAT PLACES STRATEGIC MOVES.
+
+ADJUSTABLE BOARD SIZE
+
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic-Tac-Toe</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat|Nanum+Gothic|Roboto" rel="stylesheet">
+</head>
+<body>
+	<div class="top">
+		<h1>Xs & Os</h1>
+		<h2>tic-tac-toe</h2>
+	</div>
+	
+	<div class="gameBoard">
+		
+		<div id="10" class="box"></div>
+		<div id="11" class="box"></div>
+		<div id="12" class="box"></div><br>
+		<div id="20" class="box"></div>
+		<div id="21" class="box"></div>
+		<div id="22" class="box"></div><br>
+		<div id="30" class="box"></div>
+		<div id="31" class="box"></div>
+		<div id="32" class="box"></div>
+
+		<div id="lightBox" class="hideResult">
+			<img id="hoverImg" src="">
+			<p id="hoverMsg"></p>
+			<input type="button" value="Try Again" onClick="window.location.reload()">
+		</div>
+
+		<p id="turn"></p>
+	</div>
+	
+
+	<script src="script.js"></script>
+</body>
+</html>

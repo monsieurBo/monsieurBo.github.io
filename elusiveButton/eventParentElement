@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width">
+	<style type="text/css">
+		body {
+			margin: 0;
+		}
+
+		* {
+			box-sizing: border-box;
+			/*border: solid 1px;*/
+		}
+
+		.top {
+			background: #005353;
+			padding: 1.5em;
+			text-align: center;
+			color: white;
+		}
+
+		.field {
+			width: 100%;
+			height: 50vw;
+			text-align: center;
+		}
+
+		button {
+			cursor: pointer;
+		    border: none;
+		    background-color: white;
+		    padding: 0;
+		    text-align: center;
+		}
+
+		#btn {
+			position: relative;
+			/*left: 50vw;*/
+		}
+
+		#button:hover {
+			function
+		}
+	</style>
+</head>
+<body>
+	<div class="top">
+		<h1>event</h1>
+		<h2>..parent ..child(ren)</h2>
+	</div>
+	
+	<div id="social-box">
+    <a id="facebook" href="https://facebook.com">Facebook</a>
+    <a id="linkedin" href="https://linkedin.com">LinkedIn</a>
+</div>
+
+
+	<!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+ -->
+	<script type="text/javascript">
+	
+	</script>
+</body>
+</html>
