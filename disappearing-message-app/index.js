@@ -1,3 +1,14 @@
+function copyLink() {
+  var copyText = document.getElementById("share-url").innerHTML;
+  console.log(copyText);
+  copyText.select();
+  document.execCommand("Copy");
+  alert("Copied the text: " + copyText.value);
+}
+
+
+
+
 // 1. Get the <form> element
 form = document.querySelector('#create-form');
 // console.log(form)
@@ -43,21 +54,15 @@ form.onsubmit = function(event) {
 	     unhide.classList.remove('hidden');
 	  });
 
-	function copyLink() {
-	  var copyText = document.getElementById("share-url");
-	  copyText.select();
-	  document.execCommand("Copy");
-	  alert("Copied the text: " + copyText.value);
-	}
+	// function copyLink() {
+	//   var copyText = document.getElementById("share-url");
+	//   copyText.select();
+	//   document.execCommand("Copy");
+	//   alert("Copied the text: " + copyText.value);
+	// }
 }
 
-function copyLink() {
-  var copyText = document.getElementById("share-url").innerHTML;
-  console.log(copyText);
-  copyText.select();
-  document.execCommand("Copy");
-  alert("Copied the text: " + copyText.value);
-}
+
 
 
 

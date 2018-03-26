@@ -28,9 +28,37 @@ body {
 .top h2 {
 	margin: 0;
 }
-.gameBoard {
-	padding: 50px 0;
+
+#chooseCat {
+	padding-top: .5em;
 	text-align: center;
-	margin: 5px; 
 	font-size: 50px;
+}
+
+#category {
+	width: 30vw;
+	padding: .5em;
+	background-color: #7FC2C5;
+}
+
+.box {
+	width: 60vw;
+	margin: 1em auto;
+	vertical-align: middle;
+	text-align: center;
+	padding: 1em;
+	border-radius: 5px;
+	background-color: #e7b6b3;
+
+	border: solid 3px #999999;
+}
+
+.box img {
+	text-align: left;
+}
+
+p {
+	font-size: 30px;
+	color: white;
+	margin: 1em;
 }
