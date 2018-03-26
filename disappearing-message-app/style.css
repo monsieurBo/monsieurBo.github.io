@@ -41,3 +41,7 @@ body {
   margin-top: 3em;
   text-align: center;
 }
+
+.hidden {
+	display: none;
+}

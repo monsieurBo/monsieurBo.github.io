@@ -25,7 +25,7 @@ form.onsubmit = function(event) {
 
 	// // 2.4 Get the <p> element and change it's value to the URL string
 	paragraph = document.querySelector('#share-url');
-	paragraph.innerHTML = newURL;
+	// paragraph.innerHTML = newURL;
 
 
 	API = 'https://api-ssl.bitly.com/v3/shorten?access_token=1caa8b2c00936737169d93b91b6a9bf8de45bc0d&longUrl=' + newURL + '&format=json'
@@ -38,10 +38,25 @@ form.onsubmit = function(event) {
 	     console.log(result);
 	     console.log(result.data.url);
 	     paragraph.innerHTML = result.data.url;
+
+	     var unhide = document.getElementById('copyBtn');
+	     unhide.classList.remove('hidden');
 	  });
 
+	function copyLink() {
+	  var copyText = document.getElementById("share-url");
+	  copyText.select();
+	  document.execCommand("Copy");
+	  alert("Copied the text: " + copyText.value);
+	}
+}
 
-	
+function copyLink() {
+  var copyText = document.getElementById("share-url").innerHTML;
+  console.log(copyText);
+  copyText.select();
+  document.execCommand("Copy");
+  alert("Copied the text: " + copyText.value);
 }
 
 
