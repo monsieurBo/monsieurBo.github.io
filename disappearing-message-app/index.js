@@ -42,16 +42,16 @@ form.onsubmit = function(event) {
 	API = 'https://api-ssl.bitly.com/v3/shorten?access_token=1caa8b2c00936737169d93b91b6a9bf8de45bc0d&longUrl=' + newURL + '&format=json'
 	fetch(API)
 	  .then(function(response){
-	     return response.json(); 
-	     console.log(response);
+     return response.json(); 
+     console.log(response);
 	  })
 	  .then(function(result){
-	     console.log(result);
-	     console.log(result.data.url);
-	     paragraph.innerHTML = result.data.url;
+     console.log(result);
+     console.log(result.data.url);
+     paragraph.innerHTML = result.data.url;
 
-	     var unhide = document.getElementById('copyBtn');
-	     unhide.classList.remove('hidden');
+     var unhide = document.getElementById('copyBtn');
+     unhide.classList.remove('hidden');
 	  });
 
 	// function copyLink() {
