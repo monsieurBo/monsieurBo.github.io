@@ -37,6 +37,7 @@ form.onsubmit = function(event) {
 	  .then(function(result){
 	     console.log(result);
 	     console.log(result.data.url);
+	     paragraph.innerHTML = result.data.url;
 	  });
 
 
