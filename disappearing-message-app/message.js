@@ -5,23 +5,30 @@ let img_url = params.get('img-url');
 let msg = params.get('msg');
 
 
+if (img_url === '' || img_url === null) {
+	// 2. Get the <img> and <p> element
+	imgTag = document.querySelector('img');
+	imgTag.src = 'http://via.placeholder.com/400x400';
 
-// 2. Get the <img> and <p> element
-imgTag = document.querySelector('img');
-imgTag.src = img_url
+	// 3. Change the innerHTML of the <p> element
+	hTag = document.querySelector('#message');
+	hTag.innerHTML = 'No Image Found!'
+}
+else {
+	// 2. Get the <img> and <p> element
+	imgTag = document.querySelector('img');
+	imgTag.src = img_url
 
-hTag = document.querySelector('#message');
-
-// 3. Change the innerHTML of the <p> element
-
-hTag.innerHTML = msg
-
+	// 3. Change the innerHTML of the <p> element
+	hTag = document.querySelector('#message');
+	hTag.innerHTML = msg
+}
 // 4. Change the src attribute of <img> element
 
 // timeout
 
 function toIndex() {
-	location.href = "file:///C:/Users/naive/OneDrive/Desktop/disappearing-message-app-boiler-master/index.html"
+	location.href = "https://monsieurbo.github.io/disappearing-message-app/index.html"
 }
 
 setTimeout(toIndex, 5000)
@@ -31,6 +38,7 @@ function timer() {
   const timer = document.getElementById("timer")
   timer.innerHTML = timer.innerHTML - 1
 }
+
 
 // function currentURL() {
 // 	location.href = url
