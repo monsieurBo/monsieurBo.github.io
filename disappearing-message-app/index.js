@@ -25,7 +25,7 @@ form.onsubmit = function(event) {
 	msg = document.querySelector('#input-msg').value;
 
 	// // 2.3 Concatenate the URL string
-	homeURL = "https://monsieurbo.github.io/disappearing-message-app/messsage.html"
+	homeURL = "https://monsieurbo.github.io/disappearing-message-app/message.html"
  	
  	newURL = homeURL + "?img-url=" + img + "&msg=" + msg 	//might have to encodeUri() -  check url encoded
  	console.log(newURL);
