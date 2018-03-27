@@ -1,0 +1,84 @@
+body {
+	margin: 0;
+	min-width: 300px;
+}
+
+* {
+	box-sizing: border-box;
+	/*border: solid 1px;*/
+}
+
+.top {
+	background: #005353;
+	padding: 1.5em;
+	text-align: center;
+	color: white;
+}
+
+.createList {
+	text-align: left;
+}
+
+input {
+	width: 100%;
+	padding: 1em;
+	font-size: 1em;
+}
+
+button {
+	cursor: pointer;
+	width: 100%;
+  background-color: #D6D3CE;
+  border: none;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  font-size: 16px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	position: relative;
+	padding: 1em 1em 1em 1.5em;
+	list-style: none;
+	font-size: 18px;
+	background: #ececec;
+}
+ul li:nth-child(odd) {
+	background: #f8f8f8;
+}
+ul li:hover {
+	background: #c0c0c0;
+}
+
+.close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 1em;
+}
+
+.close:hover {
+	cursor: pointer;
+	background-color: #FF3232;
+	color: white;
+}
+
+
+
+*MEDIA QUERIES*/
+@media all and (max-width: 800px) {
+	
+
+}
+
+@media all and (max-width: 600px) {
+  body {
+  	min-width: 30vw;
+  }
+
+}
