@@ -126,29 +126,8 @@ p{
 
 
 /* PROJECT PAGE CSS*/
-.gallery {
-	padding: 0;
-}
 
-
-.galleryItem {
-	display: inline-block;
-	background-color: #eeeeee;
-	padding: 1em;
-	margin: .5em;
-	border: 1px solid #dddddd;
-	text-align: center;
-	vertical-align: top;
-} 
-
-.galleryItem img {
-	max-width: 200px;
-}
-
-.galleryItem .caption {
-	display: none;
-}
-
+/*light box*/
 .lightBox {
 	position: fixed;
 	background-color: rgba(255, 255, 255, 0.8);
@@ -173,20 +152,8 @@ p{
 	color: black;
 }
 
-.lbControls {
-
-}
-
 .lbClose {
 	float: right;
-}
-
-.lbPrev {
-
-}
-
-.lbNext {
-
 }
 
 .hidden {
